@@ -33,4 +33,7 @@ jobs:
       - name: Working
         run: |
           python3 ./微信推送.py
+        env: 
+          TOKEN: ${{ secrets.TOKEN }}
+          SCKEY: ${{ secrets.SCKEY }}
         shell: bash
