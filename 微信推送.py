@@ -94,12 +94,12 @@ index=(random.randint(0, length-1))
 now = time.asctime(time.localtime(time.time()))
 shijian = now[11:13]
 print('时间'+shijian)
-if(shijian=='06'):
+if(shijian=='22'):
     print(msg)
     requests.post('http://sc.ftqq.com/' + sckey + '.send', data={'text': msg, 'desp': ""})
     print(tianqi)
     requests.post('http://sc.ftqq.com/'+sckey+'.send', data={'text': tianqi, 'desp': ""})
-if(shijian=='17'):
+if(shijian=='09'):
     print(saohua[index])
     requests.post('http://sc.ftqq.com/' + sckey + '.send', data={'text': saohua[index], 'desp': ""})
 
